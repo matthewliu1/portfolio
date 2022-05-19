@@ -1,7 +1,8 @@
-let header = document.querySelector(".header h1");
-anime({
-    targets: '.h1 .letter',
-    traslateX: 360,
-    duration: 1000, 
-    loop: true
-});
+let animation = anime({
+    targets: '.test',
+    translateX: 100,
+    borderRadius: 50,
+    duration: 2000,
+    easing: 'linear',
+    direction: 'alternate'
+  });    

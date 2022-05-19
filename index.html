@@ -1,215 +1,267 @@
 <!DOCTYPE HTML>
 
 <html>
-	<head>
-		<title>Matthew's Crib</title>
-		<link rel="stylesheet" href="assets/css/style.css">
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
-		<script src="assets/js/main.js"></script>
-	</head>
-	<body>
-		<div class = "text">
-			<div class= "header">
-				<h1>MATTHEW LIU</h1>
-				<h2>Full Stack Developer - Graphic Designer - Software Engineer</h2>
-			</div>
-		</div>
-			
-		<div class = "text">
-			<h3>ABOUT</h3>
-		</div>
-		<div class = "margin grids">
-			<div class = "grid-img"><img src="images/me.png" alt="me" width="300" style="align-items: center;"></div>
-			<div class = "grid-text"><a>Email: matthewliu3484@gmail.com<br>
-			Location: Santa Clara • San Francisco • Berkeley<br>
-			Hi, I'm a sophomore at the University of California, Berkeley interested in Python, UI Design, and Cloud Computing. Currently, I'm looking for internships in the field of software engineering, data science, and cloud computing. In my free time, I love to explore new restaurants and hang out with my friends. Currently seeking a SWE related internship position for the summer of 2022. </a> 
-			<a target= "_blank" href = "https://github.com/matthewliu1">Github</a> <br>
-			<a target= "_blank" href = "https://www.linkedin.com/in/matthew-liu-938585159/">Linkedin</a> <br>
-			
 
-				</div>
+<head>
+	<title>Matthew's Crib</title>
+	<link rel="stylesheet" href="assets/css/style.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+	<script src="assets/js/main.js"></script>
+</head>
+
+<body>
+	<div class="header">
+		<h1>MATTHEW LIU</h1>
+		<h2>Full Stack Developer - Graphic Designer - Software Engineer</h2>
+	</div>
+
+	<div class="text">
+		<h3>ABOUT</h3>
+	</div>
+
+	<div class="margin grids">
+		<div class="grid-img"><img src="images/me.png" alt="me" width="300" style="align-items: center;"></div>
+		<div class="grid-text"><a>&#128231 matthewliu3484@gmail.com<br>
+				&#128205 Santa Clara • San Francisco • Berkeley<br>
+				Hi, I'm a junior at the <b>UC Berkeley</b> studying Computer Science. I'm interested in Python,
+				UI Design, and Cloud Computing and how we can use technology to improve the lives of others.
+				Currently, I'm looking for internships in the field of software engineering, data science, and cloud
+				computing. In my free time, I love to explore new restaurants and hang out with my friends in the city
+				and playing with my dog.
+				<br>Currently seeking a SWE related internship position for the summer of 2022. </a> <br>
+			<a target="_blank" href="https://github.com/matthewliu1">Github</a> <br>
+			<a target="_blank" href="https://www.linkedin.com/in/matthew-liu-938585159/">Linkedin</a>
 		</div>
-		<div class = "text">
-			<h3>SKILLS</h3>
-		</div>
-		<div class="skills">
-			<div class = "skill">
-				<div class = "skill-name">Python</div>
-				<div class = "skill-bar">
-					<div class = "skill-per" per = "90"></div>
-				</div>
-			</div>
-
-			<div class = "skill">
-				<div class = "skill-name">Java</div>
-				<div class = "skill-bar">
-					<div class = "skill-per" per = "80"></div>
-				</div>
-			</div>
-
-			<div class = "skill">
-				<div class = "skill-name">HTML</div>
-				<div class = "skill-bar">
-					<div class = "skill-per" per = "70"></div>
-				</div>
-			</div>
-
-			<div class = "skill">
-				<div class = "skill-name">CSS</div>
-				<div class = "skill-bar">
-					<div class = "skill-per" per = "65"></div>
-				</div>
-			</div>
-			<div class = "skill">
-				<div class = "skill-name">Javascript</div>
-				<div class = "skill-bar">
-					<div class = "skill-per" per = "55"></div>
-				</div>
-			</div>
-			<div class = "skill">
-				<div class = "skill-name">Git</div>
-				<div class = "skill-bar">
-					<div class = "skill-per" per = "75"></div>
-				</div>
-			</div>
-			<div class = "skill">
-				<div class = "skill-name">SQL</div>
-				<div class = "skill-bar">
-					<div class = "skill-per" per = "75"></div>
-				</div>
-			</div>
-			<div class = "skill">
-				<div class = "skill-name">C</div>
-				<div class = "skill-bar">
-					<div class = "skill-per" per = "65"></div>
-				</div>
+	</div>
+	<div class="text">
+		<h3>SKILLS</h3>
+	</div>
+	<div class="skills">
+		<div class="skill">
+			<div class="skill-name">Python</div>
+			<div class="skill-bar">
+				<div class="skill-per" per="90"></div>
 			</div>
 		</div>
-		<script>
-			$('.skill-per').each(function(){
-				var $this = $(this);
-				var per = $this.attr('per');
-				$this.css("width", per + '%');
-				$({animatedValue: 0}).animate({animatedValue: per}, {
-					duration: 1500,
-					step: function(){
-						$this.attr('per', Math.floor(this.animatedValue) + '%');
-					},
-					complete: function(){
-						$this.attr('per', Math.floor(this.animatedValue) + '%');
-					}
-				});
+
+		<div class="skill">
+			<div class="skill-name">Java</div>
+			<div class="skill-bar">
+				<div class="skill-per" per="80"></div>
+			</div>
+		</div>
+
+		<div class="skill">
+			<div class="skill-name">HTML</div>
+			<div class="skill-bar">
+				<div class="skill-per" per="70"></div>
+			</div>
+		</div>
+
+		<div class="skill">
+			<div class="skill-name">CSS</div>
+			<div class="skill-bar">
+				<div class="skill-per" per="65"></div>
+			</div>
+		</div>
+		<div class="skill">
+			<div class="skill-name">Javascript</div>
+			<div class="skill-bar">
+				<div class="skill-per" per="55"></div>
+			</div>
+		</div>
+		<div class="skill">
+			<div class="skill-name">Git</div>
+			<div class="skill-bar">
+				<div class="skill-per" per="75"></div>
+			</div>
+		</div>
+		<div class="skill">
+			<div class="skill-name">SQL</div>
+			<div class="skill-bar">
+				<div class="skill-per" per="75"></div>
+			</div>
+		</div>
+		<div class="skill">
+			<div class="skill-name">C</div>
+			<div class="skill-bar">
+				<div class="skill-per" per="65"></div>
+			</div>
+		</div>
+	</div>
+	<script>
+		$('.skill-per').each(function () {
+			var $this = $(this);
+			var per = $this.attr('per');
+			$this.css("width", per + '%');
+			$({ animatedValue: 0 }).animate({ animatedValue: per }, {
+				duration: 1500,
+				step: function () {
+					$this.attr('per', Math.floor(this.animatedValue) + '%');
+				},
+				complete: function () {
+					$this.attr('per', Math.floor(this.animatedValue) + '%');
+				}
 			});
-		</script>
-	
-		<div class = "text">
-			<h3>EXPERIENCE</h3>
-			<div class = "boxes">
-				<h4>Cloud at Cal</h4>
-				<h5>Research Member</h5>
-				<div class = "grids">
-					<div class = "grid-text text-right">I research and teach new AWS services to the team members to expose ourselves to more AWS services
-						. Furthermore, I completed the education demos and presented real-life case studies with detailed architecture diagrams and is competing in the AWS DeepRacer League with reinforced learning in the UC Berkeley team.
-						<br><div class = "tags tag-right"  style = "background-color: rgb(91, 151, 91)">
-							Python
-						</div>
-						<div class = "tags tag-right" style = "background-color: rgb(65, 101, 134)">
-							AWS Cloud Computing
-						</div>
-					</div>
-					<div class = "grid-img"><img src="images/cloud.png" alt="TASA" width="200"></div>
+		});
+	</script>
 
-					</div>
-			</div>
-			<div class = "boxes">
-				<h4>Taiwanese American Student Association</h4>
-				<h5>Webmaster</h5>
-				<div class = "grids">
-					<div class = "grid-img"><img src="images/tasa.png" alt="TASA" width="200"></div>
-					<div class = "grid-text text-left">I maintain and update the website with HTML, CSS, Flask, and jQuery to add new features to the website. I coordinated with the design officers to work on the first complete website makeover, integrating responsive mobile-compatible UI to increase user engagement. For my semester project, I used SQL to add a feature to track cabinet members’ responsibilities and hold them accountable
-						<br><div class = "tags tag-left"  style = "background-color: rgb(91, 151, 91)">
-							Python
-						</div>
-						<div class = "tags tag-left" style = "background-color: rgb(65, 101, 134)">
-							Flask
-						</div>
-						<div class = "tags tag-left" style = "background-color: rgb(168, 70, 63)">
-							HTML
-						</div>
-						<div class = "tags tag-left" style = "background-color: rgb(144, 89, 158)">
-							CSS
-						</div>
-					</div>
+	<div class="text">
+		<h3>EXPERIENCE</h3>
+	</div>
+	<div class="boxes">
+		<h4>Cloud at Cal</h4>
+		<h5>Research Member</h5>
+		<div class="grids">
+			<div class="grid-text text-right">I research and teach new AWS services to the team members to expose
+				ourselves to more AWS services
+				. Furthermore, I completed the education demos and presented real-life case studies with detailed
+				architecture diagrams and is competing in the AWS DeepRacer League with reinforced learning in the UC
+				Berkeley team.
+				<br>
+				<div class="tags tag-right" style="background-color: rgb(91, 151, 91)">
+					Python
+				</div>
+				<div class="tags tag-right" style="background-color: rgb(65, 101, 134)">
+					AWS Cloud Computing
 				</div>
 			</div>
-			<div class = "boxes">
-				<h4>UrsaTech X Engineering Student Council</h4>
-				<h5>Project Member</h5>
-				<div class = "grids">
-					<div class = "grid-text text-right">I analyzed data collected from over 50 engineering clubs at Berkeley and find correlations between demographic information and perceptions of club culture using Pandas in order to provide feedback to the Engineering Student Council.
-						<br><div class = "tags tag-right"  style = "background-color: rgb(91, 151, 91)">
-							Python
-						</div>
-						<div class = "tags tag-right" style = "background-color: rgb(111, 117, 124)">
-							MATLAB
-						</div>
-					</div>
-					<div class = "grid-img"><img src="images/ursatech.png" alt="TASA" width="200"></div>
+			<div class="grid-img"><img src="images/cloud.png" alt="TASA" width="200"></div>
+		</div>
+	</div>
+	<div class="boxes">
+		<h4>Taiwanese American Student Association</h4>
+		<h5>Webmaster</h5>
+		<div class="grids">
+			<div class="grid-img"><img src="images/tasa.png" alt="TASA" width="200"></div>
+			<div class="grid-text text-left">I maintain and update the website with HTML, CSS, Flask, and jQuery to add
+				new features to the website. I coordinated with the design officers to work on the first complete
+				website makeover, integrating responsive mobile-compatible UI to increase user engagement. For my
+				semester project, I used SQL to add a feature to track cabinet members’ responsibilities and hold them
+				accountable
+				<br>
+				<div class="tags tag-left" style="background-color: rgb(91, 151, 91)">
+					Python
 				</div>
+				<div class="tags tag-left" style="background-color: rgb(65, 101, 134)">
+					Flask
 				</div>
-			<div class = "boxes">
-				<h4>Blue & Gold Yearbook</h4>
-				<h5>Designer & Section Editor</h5>
-				<div class = "grids">
-					<div class = "grid-img"><img src="images/BG.png" alt="TASA" width="200"></div>
-					<div class = "grid-text text-left">As the spread designer at Blue & Gold, I collaborate with copywriters and photographers to discuss and visualize spread designs each week. Utilizing Adobe Photoshop, Illustrator, and Indesign, I draft and revise unique Yearbook spreads that fit the overall thematic model.
-						<br><div class = "tags tag-left"  style = "background-color: rgb(165, 105, 133)">
-							Adobe Illustrator
-						</div>
-						<div class = "tags tag-left" style = "background-color: rgb(120, 175, 83)">
-							Adobe Photoshop
-						</div>
-					</div>
+				<div class="tags tag-left" style="background-color: rgb(168, 70, 63)">
+					HTML
 				</div>
-			</div>
-			<div class = "boxes">
-				<h4>Secari.life</h4>
-				<h5>Founder & Fullstack Developer</h5>
-				<div class = "grids">
-					<div class = "grid-text text-right">I created a website to scan multiple photos of any sizes and crop them each into individual files that can be saved on the cloud. I got the idea after trying to make a birthday slideshow for my grandaunt and wasting a lot of time cropping out the white backgrounds. In the process of creating this project on my own, I learned how to use Computer Vision and Django to build a functional website and enhance users' experience.
-						<br><div class = "tags tag-right"  style = "background-color: rgb(91, 151, 91)">
-							Python
-						</div>
-						<div class = "tags tag-right" style = "background-color: rgb(156, 103, 152)">
-							Django
-						</div>
-						<div class = "tags tag-right" style = "background-color: rgb(49, 93, 129)">
-							Computer Vision
-						</div>
-						<div class = "tags tag-right" style = "background-color: rgb(168, 70, 63)">
-							HTML
-						</div>
-						<div class = "tags tag-right" style = "background-color: rgb(144, 89, 158)">
-							CSS
-						</div>
-					</div>
-					<div class = "grid-img"><img src="images/SECARI.png" alt="TASA" width="200"></div>
-				</div>
-			</div>
-			<div class = "boxes">
-				<h4>Agent.ai</h4>
-				<h5>Business Analyst Intern</h5>
-				<div class = "grids">
-					<div class = "grid-img"><img src="images/agentai.png" alt="TASA" width="200"></div>
-					<div class = "grid-text text-left">As the youngest intern to work at the company, I submitted weekly Search Engine Optimization reports for the company's website. I also researched and gathered data about other competitors to assess competition in the market.</div>
+				<div class="tags tag-left" style="background-color: rgb(144, 89, 158)">
+					CSS
 				</div>
 			</div>
 		</div>
-
-		<div class="footer">
-			
+	</div>
+	<div class="boxes">
+		<h4>UrsaTech X Engineering Student Council</h4>
+		<h5>Project Member</h5>
+		<div class="grids">
+			<div class="grid-text text-right">I analyzed data collected from over 50 engineering clubs at Berkeley and
+				find correlations between demographic information and perceptions of club culture using Pandas in order
+				to provide feedback to the Engineering Student Council.
+				<br>
+				<div class="tags tag-right" style="background-color: rgb(91, 151, 91)">
+					Python
+				</div>
+				<div class="tags tag-right" style="background-color: rgb(111, 117, 124)">
+					MATLAB
+				</div>
+			</div>
+			<div class="grid-img"><img src="images/ursatech.png" alt="TASA" width="200"></div>
 		</div>
+	</div>
+	<div class="boxes">
+		<h4>Blue & Gold Yearbook</h4>
+		<h5>Designer & Section Editor</h5>
+		<div class="grids">
+			<div class="grid-img"><img src="images/BG.png" alt="TASA" width="200"></div>
+			<div class="grid-text text-left">As the spread designer at Blue & Gold, I collaborate with copywriters and
+				photographers to discuss and visualize spread designs each week. Utilizing Adobe Photoshop, Illustrator,
+				and Indesign, I draft and revise unique Yearbook spreads that fit the overall thematic model.
+				<br>
+				<div class="tags tag-left" style="background-color: rgb(165, 105, 133)">
+					Adobe Illustrator
+				</div>
+				<div class="tags tag-left" style="background-color: rgb(120, 175, 83)">
+					Adobe Photoshop
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="boxes">
+		<h4>Secari.life</h4>
+		<h5>Full Stack Developer</h5>
+		<div class="grids">
+			<div class="grid-text text-right">I created a website to scan multiple photos of any sizes and crop them
+				each into individual files that can be saved on the cloud. I got the idea after trying to make a
+				birthday slideshow for my grandaunt and wasting a lot of time cropping out the white backgrounds. In the
+				process of creating this project on my own, I learned how to use Computer Vision and Django to build a
+				functional website and enhance users' experience.
+				<br>
+				<div class="tags tag-right" style="background-color: rgb(91, 151, 91)">
+					Python
+				</div>
+				<div class="tags tag-right" style="background-color: rgb(156, 103, 152)">
+					Django
+				</div>
+				<div class="tags tag-right" style="background-color: rgb(49, 93, 129)">
+					Computer Vision
+				</div>
+				<div class="tags tag-right" style="background-color: rgb(168, 70, 63)">
+					HTML
+				</div>
+				<div class="tags tag-right" style="background-color: rgb(144, 89, 158)">
+					CSS
+				</div>
+			</div>
+			<div class="grid-img"><img src="images/SECARI.png" alt="TASA" width="200"></div>
+		</div>
+	</div>
+	<div class="boxes">
+		<h4>Agent.ai</h4>
+		<h5>Business Analyst Intern</h5>
+		<div class="grids">
+			<div class="grid-img"><img src="images/agentai.png" alt="TASA" width="200"></div>
+			<div class="grid-text text-left">As the youngest intern to work at the company, I submitted weekly Search
+				Engine Optimization reports for the company's website. I also researched and gathered data about other
+				competitors to assess competition in the market.</div>
+		</div>
+	</div>
+	</div>
+	<script>
+		var textEl = document.querySelectorAll('.text');
+		function animateBox(el, scale, duration, elasticity) {
+			anime.remove(el);
+			anime({
+				targets: el,
+				scale: scale,
+				duration: duration,
+				elasticity: elasticity
+			});
+		}
+		function enterBox(el) {
+			animateBox(el, 1.2, 1000, 600)
+		};
 
-	</body>
+		function leaveBox(el) {
+			animateBox(el, 1.0, 800, 500)
+		};
+
+		for (var i = 0; i < textEl.length; i++) {
+			textEl[i].addEventListener('mouseenter', function (e) {
+				enterBox(e.target);
+			}, false);
+
+			textEl[i].addEventListener('mouseleave', function (e) {
+				leaveBox(e.target)
+			}, false);
+		}
+	</script>
+
+</body>
+
 </html>
