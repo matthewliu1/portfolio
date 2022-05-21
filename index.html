@@ -11,17 +11,77 @@
 </head>
 
 <body>
+	<a> W,A,S,D to move</a>
+	<div class="rocket">
+		<svg width="358" height="105" viewBox="0 0 558 305" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<g id="heli">
+				<path id="body"
+					d="M121.07 120.055L110 85.0102H117.116L132.93 107.038H234.14L253.907 93.0205H279.093L281.186 85.5108H292.651L295.442 93.0205H329.023L344.047 103.033C382 103.033 387.669 136.661 392.279 139.58C394.651 141.082 399 146.589 399 149.593C399 153.598 396.233 163.11 380.023 168.117C373.427 170.154 326.3 170.34 290.674 169.61C282.303 169.439 274.566 169.217 268.14 168.956C262.006 168.708 262.997 168.425 259.837 168.117C249.927 167.151 238.039 158.26 234.926 149.593C232.873 143.877 232.058 138.258 232.163 135.074L132.93 123.56H121.07V120.055Z"
+					fill="#349844" />
+				<path id="head"
+					d="M290.674 76.0113C290.674 71.5118 284.263 72.5117 284.263 76.0113V85.5108H290.674V76.0113Z"
+					fill="#7D7D7D" />
+				<path id="window"
+					d="M299.005 123.811C299.245 108.837 307.509 103.744 311.611 103.07H327.818H341.625H345.5C370.33 101.496 389.561 127.016 392 140H348.66H341.625H327.818H311.611C307.07 140 298.765 138.786 299.005 123.811Z"
+					fill="#8DEFFC" />
+				<path id="long" d="M161.782 76H292.874H404.218L408 81H158L161.782 76Z" fill="#D9D9D9" />
+				<path id="short" d="M204.496 76H291.017H364.504L367 81H202L204.496 76Z" fill="#D9D9D9" />
+				<path id="legs"
+					d="M270.82 180V169H276.786V180H344.001V170H349.569V180H383C383 182.8 379.818 183.833 378.227 184H235V180H270.82Z"
+					fill="#7D7D7D" />
+				<line id="Line 1" x1="235" y1="148.5" x2="399" y2="148.5" stroke="#205228" stroke-width="3" />
+				<line id="Line 2" x1="346" y1="103" x2="346" y2="140" stroke="#205228" stroke-width="2" />
+				<line id="Line 3" x1="320" y1="103" x2="320" y2="140" stroke="#205228" stroke-width="2" />
+			</g>
+		</svg>
+
+
+		<style>
+			#body {
+				fill: rgb(60, 126, 60);
+			}
+
+			@keyframes short {
+				0% {
+					opacity: 0;
+				}
+
+				100% {
+					opacity: 1;
+				}
+			}
+
+			@keyframes long {
+				0% {
+					opacity: 1;
+				}
+
+				100% {
+					opacity: 0;
+				}
+			}
+
+			#short {
+				animation: short 0.2s infinite;
+			}
+
+			#long {
+				animation: long 0.2s infinite;
+			}
+		</style>
+	</div>
 	<div class="header">
 		<h1>MATTHEW LIU</h1>
 		<h2>Full Stack Developer - Graphic Designer - Software Engineer</h2>
 	</div>
-
 	<div class="text">
 		<h3>ABOUT</h3>
 	</div>
 
 	<div class="margin grids">
-		<div class="grid-img"><img src="images/me.png" alt="me" width="300" style="align-items: center;"></div>
+		<div class="grid-img"><img src="images/me.png" alt="me" width="300"
+				style="align-items: center; z-index: 3; position: relative">
+		</div>
 		<div class="grid-text"><a>&#128231 matthewliu3484@gmail.com<br>
 				&#128205 Santa Clara • San Francisco • Berkeley<br>
 				Hi, I'm a junior at the <b>UC Berkeley</b> studying Computer Science. I'm interested in Python,
@@ -231,9 +291,9 @@
 				competitors to assess competition in the market.</div>
 		</div>
 	</div>
-	</div>
+	<div class="footer"></div>
 	<script>
-		var textEl = document.querySelectorAll('.text');
+		var textEl = document.querySelectorAll('.boxes');
 		function animateBox(el, scale, duration, elasticity) {
 			anime.remove(el);
 			anime({
@@ -244,7 +304,7 @@
 			});
 		}
 		function enterBox(el) {
-			animateBox(el, 1.2, 1000, 600)
+			animateBox(el, 1.1, 1000, 600)
 		};
 
 		function leaveBox(el) {
@@ -259,6 +319,137 @@
 			textEl[i].addEventListener('mouseleave', function (e) {
 				leaveBox(e.target)
 			}, false);
+		}
+	</script>
+	<script>
+		var up = false,
+			right = false,
+			down = false,
+			left = false,
+			x = -100,
+			y = 0
+		document.addEventListener('keydown', press)
+		function press(e) {
+			if (e.keyCode === 38 /* up */ || e.keyCode === 87 /* w */ || e.keyCode === 90 /* z */) {
+				up = true
+			}
+			if (e.keyCode === 39 /* right */ || e.keyCode === 68 /* d */) {
+				right = true
+			}
+			if (e.keyCode === 40 /* down */ || e.keyCode === 83 /* s */) {
+				down = true
+			}
+			if (e.keyCode === 37 /* left */ || e.keyCode === 65 /* a */ || e.keyCode === 81 /* q */) {
+				left = true
+			}
+		}
+		document.addEventListener('keyup', release)
+		function release(e) {
+			if (e.keyCode === 38 /* up */ || e.keyCode === 87 /* w */ || e.keyCode === 90 /* z */) {
+				up = false
+			}
+			if (e.keyCode === 39 /* right */ || e.keyCode === 68 /* d */) {
+				right = false
+			}
+			if (e.keyCode === 40 /* down */ || e.keyCode === 83 /* s */) {
+				down = false
+			}
+			if (e.keyCode === 37 /* left */ || e.keyCode === 65 /* a */ || e.keyCode === 81 /* q */) {
+				left = false
+			}
+		}
+		function gameLoop() {
+			var div = document.querySelector('.rocket')
+			if (up) {
+				y = y - 8
+			}
+			if (right) {
+				x = x + 8
+				div.style.transform = "scaleX(1)"
+
+			}
+			if (down) {
+				y = y + 8
+			}
+			if (left) {
+				x = x - 8
+				div.style.transform = "scaleX(-1)"
+			}
+			div.style.left = x + 'px'
+			div.style.top = y + 'px'
+			window.requestAnimationFrame(gameLoop)
+		}
+		window.requestAnimationFrame(gameLoop)
+	</script>
+	<script>
+		function random(min, max) {
+			return min + Math.random() * (max + 1 - min);
+		}
+		const body = document.querySelector('body');
+		const canvasSize = body.offsetWidth * body.offsetHeight;
+		const starsFractionTop = canvasSize / 20000;
+
+		for (let i = 0; i < starsFractionTop; i++) {
+			// Set up random elements
+			let xPos = random(0, 100);
+			let yPos = random(0, 30);
+			let alpha = random(0.3, 0.7);
+			let size = random(1, 1.5);
+			let colour = '#ffffff';
+			const star = document.createElement('div');
+			star.style.position = 'absolute';
+			star.style.left = xPos + '%';
+			star.style.top = yPos + '%';
+			star.style.opacity = alpha;
+			star.style.width = size + 'px';
+			star.style.height = size + 'px';
+			star.style.backgroundColor = colour;
+			star.style.zIndex = '1';
+			star.style.borderRadius = '5px';
+
+			document.body.appendChild(star);
+		}
+		const starsFractionMid = canvasSize / 50000;
+		for (let i = 0; i < starsFractionMid; i++) {
+			// Set up random elements
+			let xPos = random(0, 100);
+			let yPos = random(30, 50);
+			let alpha = random(0.1, 0.6);
+			let size = random(1, 1.5);
+			let colour = '#ffffff';
+			const star = document.createElement('div');
+			star.style.position = 'absolute';
+			star.style.left = xPos + '%';
+			star.style.top = yPos + '%';
+			star.style.opacity = alpha;
+			star.style.width = size + 'px';
+			star.style.height = size + 'px';
+			star.style.backgroundColor = colour;
+			star.style.borderRadius = '5px';
+			star.style.zIndex = '1';
+
+			document.body.appendChild(star);
+		}
+		const starsFractionBot = canvasSize / 90000;
+		for (let i = 0; i < starsFractionBot; i++) {
+			// Set up random elements
+			let xPos = random(0, 100);
+			let yPos = random(50, 70);
+			let alpha = random(0.1, 0.4);
+			let size = random(1, 1);
+			let colour = '#ffffff';
+			const star = document.createElement('div');
+			star.style.position = 'absolute';
+			star.style.left = xPos + '%';
+			star.style.top = yPos + '%';
+			star.style.opacity = alpha;
+			star.style.width = size + 'px';
+			star.style.height = size + 'px';
+			star.style.backgroundColor = colour;
+			star.style.borderRadius = '5px';
+			star.style.zIndex = '1';
+
+			document.body.appendChild(star);
 		}
 	</script>
 
