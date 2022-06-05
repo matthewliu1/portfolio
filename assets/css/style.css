@@ -17,9 +17,12 @@ body {
     position: absolute;
 }
 
-.stars {
-    width: 1px;
-    height: 1px;
+.shootingstar {
+    width: 45px;
+    height: 2px;
+    background: linear-gradient(-45deg, rgb(186, 208, 255), rgba(0, 0, 255, 0));
+    transform: rotateZ(45deg);
+    position: relative
 }
 
 @keyframes change {
@@ -55,11 +58,14 @@ h1 {
     font-weight: 900;
     font-size: 4em;
     line-height: 1;
+    margin-bottom: 0em;
 }
 
 h2 {
     font-size: 25px;
     font-weight: 400;
+    color: #88a9ff;
+
 }
 
 h3 {
@@ -206,6 +212,11 @@ h5 {
     object-fit: cover;
 }
 
+.headshot {
+    align-items: center; 
+    z-index: 3; 
+    position: relative
+}
 .tags {
     font-size: 14px;
     padding-left: 1%;
