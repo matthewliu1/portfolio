@@ -66,6 +66,8 @@
 		</style>
 	</div>
 	<div class="shootingstar"></div>
+	<div class="shootingstar"></div>
+	<div class="shootingstar"></div>
 	<div class="header">
 		<h1>MATTHEW LIU</h1>
 		<h2>Full Stack Developer - Graphic Designer - Software Engineer</h2>
@@ -85,7 +87,7 @@
 				Currently, I'm looking for internships in the field of software engineering, data science, and cloud
 				computing. In my free time, I love to explore new restaurants and hang out with my friends in the city
 				and playing with my dog.
-				<br>Currently seeking a SWE related internship position for the summer of 2022. </a> <br> <br>
+				<br>Currently seeking a SWE related internship position for the summer and winter of 2023. </a> <br> <br>
 			<a target="_blank" href="mailto: matthewliu3484@gmail.com"><img img src="images/email.png" width="30"
 					class="icon"></a>
 			<a target="_blank" href="https://github.com/matthewliu1"><img img src="images/github.png" width="30"
@@ -169,6 +171,53 @@
 
 	<div class="text">
 		<h3>EXPERIENCE</h3>
+	</div>
+	<div class="boxes">
+		<h4>Photon Commerce</h4>
+		<h5>Software Engineer Intern</h5>
+		<div class="grids">
+			<div class="grid-text text-right">I improved OCR algorithm by more than 18% in accuracy on majority of the fields for the 
+				customers’ 1500+ invoices utilizing Python machine learning libraries. Furthermore, I created a new feature to capture the coordinates and draw out bounding boxes using the GCV APIs and RegExr patterns to improve user experience.
+				<br>
+				<div class="tags tag-right" style="background-color: rgb(91, 151, 91)">
+					Python
+				</div>
+				<div class="tags tag-right" style="background-color: rgb(65, 101, 134)">
+					AWS Cloud Computing
+				</div>
+				<div class="tags tag-right" style="background-color: rgb(202, 112, 175)">
+					UI/UX
+				</div>
+			</div>
+			<div class="grid-img"><img src="images/photon.jpg" alt="TASA" width="200"></div>
+		</div>
+	</div>
+	<div class="boxes">
+		<h4>Lawrence Berkeley National Laboratory</h4>
+		<h5>Lab Assistant</h5>
+		<div class="grids">
+			<div class="grid-img"><img src="images/lab.png" alt="TASA" width="200"></div>
+
+			<div class="grid-text text-left">I built a “smart” job script generator webpage for NERSC using JavaScript and PHP
+				and I integrated hybrid OpenMP and MPI to serve High Performance Computing users with their parallel jobs
+				In doing so, I increased the efficiency of the most popular executable by allowing users to customize all VASP inputs and automatically generating and saving the output files with NEWT APIs.
+				<br>
+				<a target="_blank" rel="noopener noreferrer" href="images/lab_poster.pdf" style="color:rgb(65, 101, 134)">Lab Poster</a>
+<br>
+				<div class="tags tag-left" style="background-color: rgb(192, 123, 83)">
+					JavaScript
+				</div>
+				<div class="tags tag-left" style="background-color: rgb(65, 101, 134)">
+					HTML
+				</div>
+				<div class="tags tag-left" style="background-color: rgb(19, 151, 123)">
+					PHP
+				</div>
+				<div class="tags tag-left" style="background-color: rgb(91, 151, 91)">
+					Python
+				</div>
+			</div>
+		</div>
 	</div>
 	<div class="boxes">
 		<h4>Cloud at Cal</h4>
@@ -291,7 +340,7 @@
 				competitors to assess competition in the market.</div>
 		</div>
 	</div>
-	<div class="footer"> <img src="images/construction.png" height="70%" style="margin-left:auto; margin-right:auto; display:block;">
+	<div class="footer"> <a target="_blank" rel="noopener noreferrer" href="https://drive.google.com/drive/folders/1C5DonTrTGd301iDtmaVKrHgL5cJyT4D3?usp=sharing">Design Portfolio</a>
 	</div>
 	<script>
 		const body = document.querySelector('body');
@@ -312,8 +361,8 @@
 			});
 		}
 		function animeStar(el, delay) {
-			shootingstar[0].style.left = random(0, body.offsetWidth) + 'px';
-			shootingstar[0].style.top = random(0,300) + 'px';
+			el.style.left = random(0, body.offsetWidth) + 'px';
+			el.style.top = random(0,300) + 'px';
 			anime({
 				targets: el,
 				translateX: 200,
@@ -335,6 +384,8 @@
 		
 		
 		animeStar(shootingstar[0], random(1000,2000))
+		animeStar(shootingstar[1], random(3000,4000))
+		animeStar(shootingstar[2], random(7000,8000))
 		headshot[0].addEventListener('mouseenter', function (e) {
 				enterBox(e.target);
 			}, false);
