@@ -69,11 +69,15 @@
 	<div class="shootingstar"></div>
 	<div class="shootingstar"></div>
 	<div class="header">
-		<h1>MATTHEW LIU</h1>
-		<h2>Full Stack Developer - UI/UX Designer - Software Engineer</h2>
+		<h1>Hi, I'm Matthew!</h1>
+		<h2>I'm a passionate software engineer with a keen interest in design and full stack development, 
+			dedicated to crafting elegant and efficient solutions that empower businesses and users.
+			<br><br>
+			Previously, I interned at Amazon, Lawrence Berkeley National Laboratory and Photon Commerce.
+		</h2>
 	</div>
 	<div class="text">
-		<h3>ABOUT</h3>
+		<h3>A little bit about ME</h3>
 	</div>
 
 	<div class="margin grids">
@@ -82,8 +86,9 @@
 		</div>
 		<div class="grid-text"><a>
 				&#128205 Santa Clara • San Francisco • Berkeley<br>
-				Hi, I'm a rising senior at the <b>UC Berkeley</b> studying Computer Science and Data Science. I'm interested in Python,
-				UI Design, and Cloud Computing and how we can use technology to improve the lives of others.
+				Hi, I'm a senior at the University of California Berkeley studying Computer Science, Data Science and Design and graduating in May 2024
+				.<br><br>I'm interested in Web Development,	Human-Computer Interaction, and Cloud Computing and Infrastructure and how we can use technology to improve the quality of lives for others. Whether it's creating applications to streamline everyday tasks or developing solutions that address pressing challenges with a team, I'm driven by the idea of making practical impacts on the world through innovation.
+				<br><br>
 				In my free time, I love to explore new restaurants and hang out with my friends in the city
 				and playing with my dog.
 				 </a> <br> <br>
@@ -95,101 +100,42 @@
 					src="images/linkedin.png" width="30" class="icon"></a>
 		</div>
 	</div>
-	<div class="text">
-		<h3>SKILLS</h3>
-	</div>
-	<div class="skills">
-		<div class="skill">
-			<div class="skill-name">Python</div>
-			<div class="skill-bar">
-				<div class="skill-per" per="90"></div>
-			</div>
-		</div>
-
-		<div class="skill">
-			<div class="skill-name">Java</div>
-			<div class="skill-bar">
-				<div class="skill-per" per="80"></div>
-			</div>
-		</div>
-
-		<div class="skill">
-			<div class="skill-name">HTML</div>
-			<div class="skill-bar">
-				<div class="skill-per" per="70"></div>
-			</div>
-		</div>
-
-		<div class="skill">
-			<div class="skill-name">CSS</div>
-			<div class="skill-bar">
-				<div class="skill-per" per="65"></div>
-			</div>
-		</div>
-		<div class="skill">
-			<div class="skill-name">Javascript</div>
-			<div class="skill-bar">
-				<div class="skill-per" per="55"></div>
-			</div>
-		</div>
-		<div class="skill">
-			<div class="skill-name">Git</div>
-			<div class="skill-bar">
-				<div class="skill-per" per="75"></div>
-			</div>
-		</div>
-		<div class="skill">
-			<div class="skill-name">SQL</div>
-			<div class="skill-bar">
-				<div class="skill-per" per="75"></div>
-			</div>
-		</div>
-		<div class="skill">
-			<div class="skill-name">C</div>
-			<div class="skill-bar">
-				<div class="skill-per" per="65"></div>
-			</div>
-		</div>
-	</div>
-	<script>
-		$('.skill-per').each(function () {
-			var $this = $(this);
-			var per = $this.attr('per');
-			$this.css("width", per + '%');
-			$({ animatedValue: 0 }).animate({ animatedValue: per }, {
-				duration: 1500,
-				step: function () {
-					$this.attr('per', Math.floor(this.animatedValue) + '%');
-				},
-				complete: function () {
-					$this.attr('per', Math.floor(this.animatedValue) + '%');
-				}
-			});
-		});
-	</script>
 
 	<div class="text">
-		<h3>WORK</h3>
 	</div>
 	<div class="boxes">
-		<h4>Amazon</h4>
-		<h5>Software Engineer Intern</h5>
+		<h4>Amazon - Software Engineer Intern</h4>
+
 		<div class="grids">
-			<!--<div class="grid-img"><img src="images/lab.png" alt="TASA" width="200"></div>-->
+			<div class="grid-img"><img src="images/amazon.png" alt="TASA" width="200"></div>
 
 			<div class="grid-text text-left">
+				<h5>May - August 2023</h5>
+				I developed a bot within the Amazon Fresh Charging Team to retrieve previous orders based on specific user-provided criteria, utilizing Natural Language Processing (NLP). As the nature of the work is confidential, I'm unable to share specific details. However, working on this project exposed me to a range of new technologies and programming practices.
+<br><br>
+				This endeavor involved understanding the unique requirements of our target audience and devising effective problem-solving strategies. Collaborating closely with my team members and receiving valuable feedback from experienced engineers and designers further honed my skills.
+				<br><br>
+				<div class="tags tag-left" style="background-color: rgb(91, 151, 91)">
+					Python
+				</div>
+				<div class="tags tag-left" style="background-color: rgb(65, 101, 134)">
+					AWS Cloud Computing
+				</div>
+				<div class="tags tag-left" style="background-color: rgb(221, 199, 73)">
+					Typescript
+				</div>	
 			</div>
 		</div>
 	</div>
 	<div class="boxes">
-		<h4>Photon Commerce</h4>
-		<h5>Software Engineer Intern</h5>
+		<h4>Photon Commerce - Software Engineer Intern</h4>
 		<div class="grids">
-			<div class="grid-img"><img src="images/photon.jpg" alt="TASA" width="200"></div>
+			<div class="grid-img"><img src="images/photon.png" alt="TASA" width="200"></div>
 
-			<div class="grid-text text-left">I improved OCR algorithm by more than 18% in accuracy on majority of the fields for the 
+			<div class="grid-text text-left">		<h5>May - August 2022</h5>
+				I improved OCR algorithm by more than 18% in accuracy on majority of the fields for the 
 				customers’ 1500+ invoices utilizing Python machine learning libraries. Furthermore, I created a new feature to capture the coordinates and draw out bounding boxes using the GCV APIs and RegExr patterns to improve user experience.
-				<br>
+				<br><br>
 				<div class="tags tag-left" style="background-color: rgb(91, 151, 91)">
 					Python
 				</div>
@@ -203,17 +149,17 @@
 		</div>
 	</div>
 	<div class="boxes">
-		<h4>Lawrence Berkeley National Laboratory</h4>
-		<h5>Laboratory Assistant - NERSC Group</h5>
+		<h4>Lawrence Berkeley National Laboratory - Lab Assistant (NERSC Group)</h4>
 		<div class="grids">
 			<div class="grid-img"><img src="images/lab.png" alt="TASA" width="200"></div>
 
-			<div class="grid-text text-left">I built a “smart” job script generator webpage for NERSC using JavaScript and PHP
+			<div class="grid-text text-left">		<h5>June - August 2022</h5>
+				I built a “smart” job script generator webpage for NERSC using JavaScript and PHP
 				and I integrated hybrid OpenMP and MPI to serve High Performance Computing users with their parallel jobs
 				In doing so, I increased the efficiency of the most popular executable by allowing users to customize all VASP inputs and automatically generating and saving the output files with NEWT APIs.
 				<br>
 				<a target="_blank" rel="noopener noreferrer" href="images/lab_poster.pdf" style="color:rgb(65, 101, 134)">Lab Poster</a>
-<br>
+<br><br>
 				<div class="tags tag-left" style="background-color: rgb(192, 123, 83)">
 					JavaScript
 				</div>
@@ -231,19 +177,23 @@
 		</div>
 	</div>
 	<div class="boxes">
-		<h4>Agent.ai</h4>
-		<h5>Business Analyst Intern</h5>
+		<h4>Agent.ai - Business Analyst Intern</h4>
 		<div class="grids">
 			<div class="grid-img"><img src="images/agentai.png" alt="Agent.ai" width="200"></div>
 
-			<div class="grid-text text-left">As the youngest intern to work at the company, I submitted weekly Search
+			<div class="grid-text text-left">		<h5>May - August 2018</h5>
+				As the youngest intern to work at the company, I submitted weekly Search
 				Engine Optimization reports for the company's website. I also researched and gathered data about other
 				competitors to assess competition in the market.</div>
 			
 		</div>
 	</div>
+	<div class="spacing">
+	</div>
 	<div class="text">
-		<h3>ORGANIZATIONS</h3>
+		<h3>Some cool things that I am part of...</h3>
+	</div>
+	<div class="text">
 	</div>
 	<div class="boxes">
 		<h4>Cloud at Cal</h4>
@@ -256,7 +206,7 @@
 				. Furthermore, I completed the education demos and presented real-life case studies with detailed
 				architecture diagrams and is competing in the AWS DeepRacer League with reinforced learning in the UC
 				Berkeley team.
-				<br>
+				<br><br>
 				<div class="tags tag-left" style="background-color: rgb(91, 151, 91)">
 					Python
 				</div>
@@ -277,7 +227,8 @@
 				website makeover, integrating responsive mobile-compatible UI to increase user engagement. For my
 				semester project, I used SQL to add a feature to track cabinet members’ responsibilities and hold them
 				accountable
-				<br>
+				<br>				<br>
+
 				<div class="tags tag-left" style="background-color: rgb(91, 151, 91)">
 					Python
 				</div>
@@ -303,7 +254,8 @@
 			<div class="grid-text text-left">I analyzed data collected from over 50 engineering clubs at Berkeley and
 				find correlations between demographic information and perceptions of club culture using Pandas in order
 				to provide feedback to the Engineering Student Council.
-				<br>
+				<br>				<br>
+
 				<div class="tags tag-left" style="background-color: rgb(91, 151, 91)">
 					Python
 				</div>
@@ -321,7 +273,8 @@
 			<div class="grid-text text-left">As the spread designer at Blue & Gold, I collaborate with copywriters and
 				photographers to discuss and visualize spread designs each week. Utilizing Adobe Photoshop, Illustrator,
 				and Indesign, I draft and revise unique Yearbook spreads that fit the overall thematic model.
-				<br>
+				<br>				<br>
+
 				<div class="tags tag-left" style="background-color: rgb(165, 105, 133)">
 					Adobe Illustrator
 				</div>
@@ -342,7 +295,8 @@
 				birthday slideshow for my grandaunt and wasting a lot of time cropping out the white backgrounds. In the
 				process of creating this project on my own, I learned how to use Computer Vision and Django to build a
 				functional website and enhance users' experience.
-				<br>
+				<br>				<br>
+
 				<div class="tags tag-left" style="background-color: rgb(91, 151, 91)">
 					Python
 				</div>
