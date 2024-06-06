@@ -1,0 +1,314 @@
+body {
+    background: #171717;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    height: 100vh;
+    font-weight: 600;
+}
+
+.blurred-circle {
+    position: fixed;
+    top: 50%;
+    left: 35%;
+    transform: translate(-50%, -50%) rotate(145deg);
+    width: 600px;
+    height: 900px;
+    border-radius: 50%;
+    background-color: rgb(36 35 96 / 64%);
+    filter: blur(50px);
+    z-index: -1;
+}
+
+h1,
+h2 {
+    padding-right: 80px;
+}
+
+.title {
+    font-size: 128px;
+    text-align: right;
+    margin-top: 1em;
+}
+
+.location {
+    text-align: right;
+    font-size: 24px;
+}
+
+#box-svg {
+    width:600px;
+    height: auto;
+}
+
+.intro {
+    text-align: left;
+    max-width: 600px;
+    float: right;
+    line-height: 1.5;
+    margin-bottom: 200px;
+
+}
+
+.vertical-line {
+    position: fixed;
+    top: 40px;
+    right: 0;
+    height: 75%;
+    width: 2px;
+    background-color: rgb(255, 255, 255);
+    content: '';
+    margin-right: 20px;
+}
+
+.vertical-line-short {
+    position: absolute;
+    left: 160px;
+    height: 100%;
+    width: 2px;
+    background-color: rgb(255, 255, 255);
+    content: '';
+}
+
+#shortline {
+    position: absolute;
+    left: 160px;
+    height: 90%;
+}
+
+.navigation {
+    position: absolute;
+    left: 20px;
+    top: 100px;
+    font-size: 16px;
+}
+
+.navigation p {
+    margin: 1px 0;
+    margin-bottom: 20px;
+}
+
+.navigation a {
+    text-decoration: none;
+}
+
+.bottom-left-links {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    font-size: 16px;
+}
+
+.bottom-left-links p {
+    display: inline-block;
+    margin: 5px 0;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.bottom-left-links a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.triangle-container {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 200px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+.upside-down-triangle {
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 30px solid white;
+    margin: 0 10px;
+}
+
+.heading {
+    position: absolute;
+    font-size: 100px;
+    text-align: right;
+    top: 10px;
+    right: 10px;
+    color: transparent;
+    /* Hide the text fill */
+    -webkit-text-stroke: 2px white;
+    /* Set the text outline */
+    text-stroke: 2px white;
+    /* Set the text outline */
+}
+
+h3 {
+    max-width: 600px;
+    line-height: 1.5;
+    margin-left: 300px;
+}
+
+.about-me {
+    font-size: 20px;
+}
+
+.about-description {
+    font-size: 16px;
+    color: rgb(180, 180, 180);
+
+}
+
+#bro {
+    position: absolute;
+    width: 40%;
+    height: auto;
+    right: 60px;
+    bottom: 50px;
+}
+
+#bro path {
+    opacity: 0;
+}
+.work-block {
+    width: 50%;
+    margin: 0 auto;
+    border: 1px solid white;
+    box-sizing: border-box;
+    padding: 60px;
+    margin-top: 10px;
+
+}
+
+.empty-block {
+    width: 50%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 80px;
+    margin-top: 10px;
+}
+
+h4 {
+    text-align: left;
+    font-size: 30px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+h5 {
+    text-align: left;
+    font-size: 18px;
+    margin-bottom: 5px;
+    margin-top: 0;
+}
+
+h6 {
+    font-size: 20px;
+}
+
+a {
+    color: rgb(180, 180, 180);
+    font-size: 14px;
+}
+
+.active a {
+    color: rgb(255, 255, 255);
+}
+
+.work-block a {
+    color: rgb(180, 180, 180);
+    font-size: 14px;
+}
+
+.img-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.img-block img {
+    margin: 0 auto;
+    width: auto;
+    height: 100px;
+    padding: 50px;
+}
+
+img {
+    height: 100px;
+}
+
+
+.highlighted {
+    color: white;
+}
+
+.glide__slide {
+    outline: 2px solid rgb(255, 255, 255);
+    outline-offset: -2px;
+    margin-right: 10px;
+    padding: 40px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 767px) {
+    .title{
+        font-size: 36px;
+    }
+
+    #box-svg {
+        width: 300px;
+    }
+    
+    h1, h2 {
+        padding-right: 40px;
+    }
+
+    a {
+        font-size: 14px;
+    }
+
+    .location {
+        padding-top: 270px;
+    }
+
+    .intro {
+        font-size: 22px;
+    }
+
+    .upside-down-triangle {
+        opacity: 0;
+    }
+
+    .heading {
+        opacity: 0;
+        top: 230px;
+        font-size: 50px;
+    }
+
+    .about-me {
+        font-size: 12px;
+    }
+
+    .about-description {
+        font-size: 12px;
+    }
+
+    h3 {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    
+    #bro {
+        width: 60%;
+    }
+    .work-block {
+        width: 80%;
+        padding: 20px;
+        margin-top: 90px;
+    }
+
+    .img-block img{
+        height: 50px;
+    }
+}
